@@ -34,7 +34,7 @@ def forecast_interest_rate(current_rate):
 
 # --------------------------- Dummy Fund Performance Data -----------------------------
 def load_fund_data():
-    dates = pd.date_range(start='2020-01-01', periods=24, freq='Q')
+    dates = pd.date_range(start='2002-01-01', periods=24, freq='Q')
     df = pd.DataFrame({
         'Date': dates,
         'StockFundReturn': [10, 8, -12, -6, 2, 5, 6, 12, 18, 25, 30, 28,
@@ -86,3 +86,4 @@ st.pyplot(fig)
 
 st.markdown("---")
 st.markdown("🔁 *Interest rate data is fetched from SBP.gov.pk. Forecasting model is placeholder and can be replaced with Prophet, ARIMA, etc.*")
+
